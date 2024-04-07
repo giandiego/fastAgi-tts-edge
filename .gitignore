@@ -1,0 +1,16 @@
+#ignora todo:
+# enviroment variables
+.env
+
+#package-lock
+package-lock.json
+
+# nodejs
+node_modules
+
+# build
+dist
+
+# IDE
+.vscode
+.idea
