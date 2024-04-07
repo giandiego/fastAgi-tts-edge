@@ -45,6 +45,16 @@ Sigue estos pasos para configurar el entorno de `fastAgi-tts-edge` en tu sistema
     ```
 
 ## Uso
+Dentro de asterisk:
+
+``` bash
+[ivr_edge_tts]
+exten => s,1,Answer()
+same => n,AGI(agi://localhost:4573/tts,"BIENVENIDOS A AULA ÚTIL, SI CONOCE EL NÚMERO DE ANEXO MÁRQUELO AHORA, MARQUE 0 PARA COMUNICARSE CON LA OPERADORA,PARA SOPORTE TÉCNICO MARQUE 1, PARA VENTAS MARQUE 2 Ó ESPERE EN LÍNEA QUE UNO DE NUESTRAS OPERADORAS LO ATENDERÁ\; GRACIAS.",es)
+same => n,Hangup()
+
+```
+
 
 ### Ver el Log
 
